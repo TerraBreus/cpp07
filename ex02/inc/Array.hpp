@@ -17,7 +17,7 @@ class Array
 			for (size_t i = 0; i < _size; i++)
 				_data[i] = other._data[i];
 		}
-		Array operator=(const Array& other){
+		Array& operator=(const Array& other){
 			if (this != &other){
 				T* new_data = new T[other._size];
 				for (size_t i = 0; i < other._size; i++)
